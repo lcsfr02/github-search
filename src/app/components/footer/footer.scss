@@ -1,0 +1,38 @@
+.footer {
+  background-color: red;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      height: 32px;
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: white;
+      font-size: 0.9rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

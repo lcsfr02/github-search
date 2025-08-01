@@ -1,4 +1,19 @@
-<p-floatlabel>
-    <input id="username" pInputText [(ngModel)]="value" />
-    <label for="username">Username</label>
-</p-floatlabel>
+<div class="search-container">
+  <div class="p-float-label input-wrapper">
+    <input
+      id="username"
+      type="text"
+      pInputText
+      [(ngModel)]="username"
+    />
+    <label for="username">Usuário do GitHub</label>
+  </div>
+
+  <button
+    pButton
+    type="button"
+    (click)="emitirBusca()"
+    class="bradesco-button"
+    label="Buscar"
+  ></button>
+</div>
