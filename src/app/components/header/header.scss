@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  background-color: #d50000;
+  color: white;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 0;
+      color: white;
+    }
+  }
+}

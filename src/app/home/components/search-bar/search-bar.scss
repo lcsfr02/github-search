@@ -1,0 +1,56 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+
+  .input-wrapper {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+
+
+
+    input {
+      width: 100%;
+      padding: 1.2rem 0.75rem 0.5rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ff0000;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: #ff0000;
+        box-shadow: 0 0 0 1px #ff0000;
+      }
+    }
+
+    label {
+      color: #ff0000;
+      font-weight: bold;
+      transition: 0.2s ease;
+      padding: 1rem;
+
+
+    }
+  }
+
+  .bradesco-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 3.25rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #ff0000;
+    }
+  }
+}
+

@@ -1,0 +1,41 @@
+<div class="home-wrapper">
+  <div class="content-wrapper">
+    <img src="assets/github-icon.png" alt="GitHub Icon" class="github-icon" />
+
+    <h2 class="home-title">Descubra Perfis no GitHub com Facilidade</h2>
+    <p class="home-subtitle">
+      Digite o nome de um usuário acima para visualizar detalhes do perfil.<br />
+      As informações públicas, como bio e repositórios, serão apresentadas logo após a busca.
+    </p>
+
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+    <div *ngIf="carregando">Carregando...</div>
+
+    <div *ngIf="userData">
+      <h3>{{ userData.name || userData.login }}</h3>
+      <img [src]="userData.avatar_url" width="120" />
+      <p>{{ userData.bio || 'Sem bio disponível' }}</p>
+    </div>
+
+    <table *ngIf="repos.length > 0" class="repo-table animate-fade-in">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>⭐ Stars</th>
+          <th>🔗 Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let repo of repos">
+          <td>{{ repo.name }}</td>
+          <td>{{ repo.description || 'Sem descrição' }}</td>
+          <td>{{ repo.stargazers_count }}</td>
+          <td>
+            <a [href]="repo.html_url" target="_blank">Ver</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
