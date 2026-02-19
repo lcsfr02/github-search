@@ -9,7 +9,9 @@ import { InputTextModule } from 'primeng/inputtext';
   templateUrl: './search-bar.html',
   styleUrl: './search-bar.scss',
   standalone: true,
-  imports: [FormsModule, InputTextModule, ButtonModule, FloatLabelModule],
+  imports: [FormsModule, InputTextModule, ButtonModule, FloatLabelModule,
+
+  ],
 })
 export class SearchBar {
   username = '';

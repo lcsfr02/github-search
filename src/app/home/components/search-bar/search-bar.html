@@ -1,13 +1,14 @@
 <div class="search-container">
-  <div class="p-float-label input-wrapper">
+  <p-floatlabel class="input-wrapper"variant="on">
+    <label for="username">Usuário do GitHub</label>
     <input
       id="username"
       type="text"
       pInputText
       [(ngModel)]="username"
     />
-    <label for="username">Usuário do GitHub</label>
-  </div>
+
+  </p-floatlabel>
 
   <button
     pButton
@@ -16,4 +17,4 @@
     class="bradesco-button"
     label="Buscar"
   ></button>
-</div>
+  </div>

@@ -11,6 +11,8 @@
     max-width: 400px;
     position: relative;
 
+
+
     input {
       width: 100%;
       padding: 1.2rem 0.75rem 0.5rem 0.75rem;
@@ -21,7 +23,6 @@
 
       &:focus {
         border-color: #ff0000;
-        outline: none;
         box-shadow: 0 0 0 1px #ff0000;
       }
     }
@@ -30,6 +31,9 @@
       color: #ff0000;
       font-weight: bold;
       transition: 0.2s ease;
+      padding: 1rem;
+
+
     }
   }
 
@@ -41,7 +45,7 @@
     font-weight: bold;
     cursor: pointer;
     border-radius: 6px;
-    height: 3.25rem; // altura do input para alinhar
+    height: 3.25rem;
     transition: background-color 0.3s;
 
     &:hover {
@@ -50,18 +54,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .search-container {
-    flex-direction: column;
-    align-items: stretch;
-
-    .bradesco-button {
-      width: 100%;
-      height: 3rem;
-    }
-
-    .input-wrapper {
-      max-width: 100%;
-    }
-  }
-}
